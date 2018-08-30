@@ -1,7 +1,11 @@
-/*jshint globalstrict: true*/
 'use strict';
 
-var assert  = require('ember-cli/tests/helpers/assert');
+const chai = require('chai');
+const chaiAsPromised = require('chai-as-promised');
+
+chai.use(chaiAsPromised);
+
+const assert = chai.assert;
 
 describe('rollbar plugin', function() {
   var subject;
